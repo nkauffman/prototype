@@ -1,0 +1,13 @@
+<div class="container">
+	<form class="form-signin">
+		<h2 class="form-signin-headin">Log In</h2>
+		<input type="text" ng-model="userData.userName" class="form-control" placeholder="User Name">
+		<input type="password" ng-model="userData.password" class="form-control" placeholder="Password">
+		<button ng-click="createUser(userData.userName)" class="btn btn-lg btn-primary btn-block">
+			Create User
+		</button>
+		<button ng-click="logIn(userData.userName, userData.password)" class="btn btn-lg btn-primary btn-block">
+			Log In
+		</button>
+	</form>
+</div>
